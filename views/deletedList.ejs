@@ -1,0 +1,19 @@
+<%- include("header") -%>
+  <div class="box">
+
+
+  <%  deleteItemListName.forEach(function(item){ %>
+
+   
+      <div class="item">
+        <input type="checkbox" name="checkbox" value="<%=item._id%>" onChange="this.form.submit()">
+        <h1 style="color: black;"><%= item.deleteTopic %></h1>
+        
+      </div>
+      
+      
+   
+  <%  }) %>
+
+</div>
+<%- include("footer") -%>
